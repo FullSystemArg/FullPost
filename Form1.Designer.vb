@@ -23,31 +23,30 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.DD_Servidor = New System.Windows.Forms.ComboBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TB_Servidor = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TB_Puerto = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TB_Email = New System.Windows.Forms.TextBox()
+        Me.DD_Email = New System.Windows.Forms.ComboBox()
+        Me.TB_Contraseña = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TB_Mascara = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TB_Respuesta = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.DD_Destino = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TB_Asunto = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TB_Cuerpo = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.EdiciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -55,14 +54,14 @@ Partial Class Form1
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'DD_Servidor
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Hotmail", "Gmail", "Yahoo"})
-        Me.ComboBox1.Location = New System.Drawing.Point(64, 47)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(135, 21)
-        Me.ComboBox1.TabIndex = 0
+        Me.DD_Servidor.FormattingEnabled = True
+        Me.DD_Servidor.Items.AddRange(New Object() {"Hotmail", "Gmail", "Yahoo"})
+        Me.DD_Servidor.Location = New System.Drawing.Point(64, 47)
+        Me.DD_Servidor.Name = "DD_Servidor"
+        Me.DD_Servidor.Size = New System.Drawing.Size(135, 21)
+        Me.DD_Servidor.TabIndex = 0
         '
         'MenuStrip1
         '
@@ -88,12 +87,12 @@ Partial Class Form1
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Servidor"
         '
-        'TextBox1
+        'TB_Servidor
         '
-        Me.TextBox1.Location = New System.Drawing.Point(205, 48)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.TB_Servidor.Location = New System.Drawing.Point(205, 48)
+        Me.TB_Servidor.Name = "TB_Servidor"
+        Me.TB_Servidor.Size = New System.Drawing.Size(163, 20)
+        Me.TB_Servidor.TabIndex = 3
         '
         'Label2
         '
@@ -104,13 +103,12 @@ Partial Class Form1
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Puerto"
         '
-        'TextBox2
+        'TB_Puerto
         '
-        Me.TextBox2.Location = New System.Drawing.Point(418, 48)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(44, 20)
-        Me.TextBox2.TabIndex = 5
-        Me.TextBox2.Text = "587"
+        Me.TB_Puerto.Location = New System.Drawing.Point(418, 48)
+        Me.TB_Puerto.Name = "TB_Puerto"
+        Me.TB_Puerto.Size = New System.Drawing.Size(44, 20)
+        Me.TB_Puerto.TabIndex = 5
         '
         'Label3
         '
@@ -121,28 +119,28 @@ Partial Class Form1
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Email"
         '
-        'TextBox3
+        'TB_Email
         '
-        Me.TextBox3.Location = New System.Drawing.Point(263, 85)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(199, 20)
-        Me.TextBox3.TabIndex = 8
+        Me.TB_Email.Location = New System.Drawing.Point(263, 85)
+        Me.TB_Email.Name = "TB_Email"
+        Me.TB_Email.Size = New System.Drawing.Size(199, 20)
+        Me.TB_Email.TabIndex = 8
         '
-        'ComboBox2
+        'DD_Email
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Hotmail", "Gmail", "Yahoo"})
-        Me.ComboBox2.Location = New System.Drawing.Point(64, 84)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(193, 21)
-        Me.ComboBox2.TabIndex = 7
+        Me.DD_Email.FormattingEnabled = True
+        Me.DD_Email.Items.AddRange(New Object() {"Remitente.1@fullentregas.com.ar", "Remitente.2@fullentregas.com.ar", "Remitente.3@fullentregas.com.ar", "Remitente.4@fullentregas.com.ar", "Remitente.5@fullentregas.com.ar", "Remitente.6@fullentregas.com.ar", "Remitente.7@fullentregas.com.ar", "Remitente.8@fullentregas.com.ar", "Remitente.9@fullentregas.com.ar", "Remitente.10@fullentregas.com.ar", "Remitente.11@fullentregas.com.ar", "Remitente.12@fullentregas.com.ar", "Remitente.13@fullentregas.com.ar", "Remitente.14@fullentregas.com.ar", "Remitente.15@fullentregas.com.ar"})
+        Me.DD_Email.Location = New System.Drawing.Point(64, 84)
+        Me.DD_Email.Name = "DD_Email"
+        Me.DD_Email.Size = New System.Drawing.Size(193, 21)
+        Me.DD_Email.TabIndex = 7
         '
-        'TextBox4
+        'TB_Contraseña
         '
-        Me.TextBox4.Location = New System.Drawing.Point(264, 116)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(125, 20)
-        Me.TextBox4.TabIndex = 10
+        Me.TB_Contraseña.Location = New System.Drawing.Point(264, 116)
+        Me.TB_Contraseña.Name = "TB_Contraseña"
+        Me.TB_Contraseña.Size = New System.Drawing.Size(197, 20)
+        Me.TB_Contraseña.TabIndex = 10
         '
         'Label4
         '
@@ -153,12 +151,12 @@ Partial Class Form1
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Contraseña"
         '
-        'TextBox5
+        'TB_Mascara
         '
-        Me.TextBox5.Location = New System.Drawing.Point(64, 150)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(114, 20)
-        Me.TextBox5.TabIndex = 12
+        Me.TB_Mascara.Location = New System.Drawing.Point(64, 150)
+        Me.TB_Mascara.Name = "TB_Mascara"
+        Me.TB_Mascara.Size = New System.Drawing.Size(129, 20)
+        Me.TB_Mascara.TabIndex = 12
         '
         'Label5
         '
@@ -169,12 +167,12 @@ Partial Class Form1
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Máscara"
         '
-        'TextBox6
+        'TB_Respuesta
         '
-        Me.TextBox6.Location = New System.Drawing.Point(263, 150)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(170, 20)
-        Me.TextBox6.TabIndex = 14
+        Me.TB_Respuesta.Location = New System.Drawing.Point(263, 150)
+        Me.TB_Respuesta.Name = "TB_Respuesta"
+        Me.TB_Respuesta.Size = New System.Drawing.Size(198, 20)
+        Me.TB_Respuesta.TabIndex = 14
         '
         'Label6
         '
@@ -188,16 +186,16 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.TextBox8)
-        Me.Panel1.Controls.Add(Me.TextBox7)
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.TB_Cuerpo)
+        Me.Panel1.Controls.Add(Me.TB_Asunto)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.ComboBox3)
+        Me.Panel1.Controls.Add(Me.DD_Destino)
         Me.Panel1.Location = New System.Drawing.Point(12, 196)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(449, 304)
+        Me.Panel1.Size = New System.Drawing.Size(449, 342)
         Me.Panel1.TabIndex = 15
         '
         'Label7
@@ -218,14 +216,13 @@ Partial Class Form1
         Me.Label8.TabIndex = 18
         Me.Label8.Text = "Email Destino"
         '
-        'ComboBox3
+        'DD_Destino
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Hotmail", "Gmail", "Yahoo"})
-        Me.ComboBox3.Location = New System.Drawing.Point(125, 24)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(150, 21)
-        Me.ComboBox3.TabIndex = 17
+        Me.DD_Destino.FormattingEnabled = True
+        Me.DD_Destino.Location = New System.Drawing.Point(125, 24)
+        Me.DD_Destino.Name = "DD_Destino"
+        Me.DD_Destino.Size = New System.Drawing.Size(150, 21)
+        Me.DD_Destino.TabIndex = 17
         '
         'Button1
         '
@@ -236,12 +233,12 @@ Partial Class Form1
         Me.Button1.Text = "Importar Listado"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox7
+        'TB_Asunto
         '
-        Me.TextBox7.Location = New System.Drawing.Point(96, 58)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox7.TabIndex = 18
+        Me.TB_Asunto.Location = New System.Drawing.Point(96, 58)
+        Me.TB_Asunto.Name = "TB_Asunto"
+        Me.TB_Asunto.Size = New System.Drawing.Size(179, 20)
+        Me.TB_Asunto.TabIndex = 18
         '
         'Label9
         '
@@ -252,26 +249,17 @@ Partial Class Form1
         Me.Label9.TabIndex = 17
         Me.Label9.Text = "Asunto"
         '
-        'TextBox8
+        'TB_Cuerpo
         '
-        Me.TextBox8.Location = New System.Drawing.Point(50, 104)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(349, 190)
-        Me.TextBox8.TabIndex = 20
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(51, 88)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(41, 13)
-        Me.Label10.TabIndex = 21
-        Me.Label10.Text = "Cuerpo"
+        Me.TB_Cuerpo.Location = New System.Drawing.Point(50, 104)
+        Me.TB_Cuerpo.Multiline = True
+        Me.TB_Cuerpo.Name = "TB_Cuerpo"
+        Me.TB_Cuerpo.Size = New System.Drawing.Size(349, 190)
+        Me.TB_Cuerpo.TabIndex = 20
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(386, 515)
+        Me.Button2.Location = New System.Drawing.Point(324, 304)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 17
@@ -295,23 +283,22 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(476, 550)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.TB_Respuesta)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TB_Mascara)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TB_Contraseña)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.TB_Email)
+        Me.Controls.Add(Me.DD_Email)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TB_Puerto)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TB_Servidor)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.DD_Servidor)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -326,31 +313,30 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents DD_Servidor As System.Windows.Forms.ComboBox
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ArchivoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TB_Servidor As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TB_Puerto As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TB_Email As System.Windows.Forms.TextBox
+    Friend WithEvents DD_Email As System.Windows.Forms.ComboBox
+    Friend WithEvents TB_Contraseña As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TB_Mascara As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TB_Respuesta As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents DD_Destino As System.Windows.Forms.ComboBox
+    Friend WithEvents TB_Asunto As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TB_Cuerpo As System.Windows.Forms.TextBox
     Friend WithEvents EdiciónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button2 As System.Windows.Forms.Button
